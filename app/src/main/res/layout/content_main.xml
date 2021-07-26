@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#222222">
+
+    <TextView
+        android:id="@+id/confNo"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_conf"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recNo"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_rec"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/dedNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confNo" />
+
+    <TextView
+        android:id="@+id/dedNo"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/round_dec"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/confTit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F34A4A"
+        android:text="Confirmed"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/confNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/recTit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#54FF5B"
+        android:text="Recovered"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/recNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dedTit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:text="Deaths"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/dedNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/latestConf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:background="#F34A4A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confNo" />
+
+    <TextView
+        android:id="@+id/latestRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#54FF5B"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recNo" />
+
+    <TextView
+        android:id="@+id/latestDed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BDBDBD"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dedNo" />
+
+    <Button
+        android:id="@+id/stateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="States ->"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/confNo"
+        app:layout_constraintEnd_toEndOf="@+id/confNo"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
